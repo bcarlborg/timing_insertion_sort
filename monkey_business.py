@@ -1,12 +1,29 @@
-def list_generator():
-	output_list = [1,2,3,4,5]
-	output_list[1:4] = ['b','c','d']
-	print("expecting output to be [1,b,c,d,5]")
-	print(output_list)
+def return_list( N ):
+	my_list=list(range(12))
+	new_list = my_list[:]
+	return new_list 
 
-def insertion_sort(input_list):
-	"""Sort the input_list using insetion sort"""
-	s = input_list
-	print(s)
+print(return_list(10))
 
-list_generator()
+
+def insertion_sort(input_list, element_to_add):
+	current_element_index = len(input_list) - 1
+	while element_to_add < input_list[current_element_index]:
+		current_element_index = current_element_index - 1
+	input_list.insert(current_element_index, element_to_add)
+	return input_list
+
+print('function input list', insertion_sort([1,3,4,10], 7))
+
+
+
+def worst_case_input_generator( input_size ):
+	pass
+
+def best_case_input_generator( input_size ):
+	pass
+
+def random_input_generator( input_size ):
+	pass
+
+
