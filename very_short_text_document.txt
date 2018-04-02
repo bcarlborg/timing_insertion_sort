@@ -1,0 +1,9 @@
+In this submission, my red line on the graph represents the worst case inputs, the blue line represents the random input cases, and the green line represents the idea input case.
+
+I defined the worst case as being a list ordered in decreasing order which needs to be sorted into increasing order. This is the worst case situation for my algorithm because the insertion sort reads values from the higher indexes, then moves them to the lower indexes. In this worst case situation, every iteration through the insertion sort must move the iinserted value down the entire array. So while n values must be inserted, they also must be moved accross and compared to n elements on every run. This creates the most uniformly quadradic runtime graph of the many situations.
+
+In the best case senario, the list is already sorted in ascending order, and when each value in the list is sorted into the lower already sub sorted section of the list, only one comparison needs to be made. Therefore, n values are "inserted," but each insertion takes constant time, because the inserted value only needs to be compared to the value one index lower in the list. Therefore, the runtime for the best casenario is linear.
+
+Finaly, the random case simply represents a somewhat average run time of the algorithm. While the curve is not as steep for this runtime as it is for the worst case, it clearly remains a quadradic function nonetheless. The curvature for this curve is less steep because unlike the worst case, the inserted value does not have to be moved down the entirety of the sorted sublist at lower indexes. On average it will will move down n/2 values as opposed to the n values that the worst case runtime needs to. 
+
+
